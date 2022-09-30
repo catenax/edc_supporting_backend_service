@@ -9,7 +9,7 @@ COPY ./pom.xml /pom.xml
 COPY ./src ./src
 
 # build for release
-RUN mvn clean install -Dmaven.test.skip=true 
+RUN mvn clean install 
 
 WORKDIR target
 
