@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
-name: dftbackend
+name: edcsupportsrv
 on:
   push:
     branches: 
@@ -54,7 +54,7 @@ jobs:
           images: |
                 ghcr.io/catenax/edc_supporting_backend_service/edc-customsrv
 #          tags: |
-#           type=semver,pattern={{version}},value=v1.1.6
+#           type=semver,pattern={{version}},value=v1.0.0
           flavor: |
               latest=true
                          
