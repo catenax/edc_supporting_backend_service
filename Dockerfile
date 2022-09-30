@@ -18,5 +18,5 @@ WORKDIR target
 
 #ENTRYPOINT ["java","-jar","auto-setup-0.0.1.jar"]
 
-EXPOSE 10009
+EXPOSE 10092
 
