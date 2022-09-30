@@ -3,13 +3,10 @@ FROM maven:latest
 WORKDIR /customservice
 
 # copy the project files
-COPY ./pom.xml /pom.xml
-
-# copy your other files
-COPY ./src ./src
+COPY . /customservice
 
 # build for release
-RUN mvn clean install 
+RUN mvn clean installv-Dmaven.test.skip=true 
 
 WORKDIR target
 
