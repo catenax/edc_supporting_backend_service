@@ -6,7 +6,8 @@ WORKDIR /customservice
 COPY . /customservice
 
 # build for release
-RUN mvn clean installv-Dmaven.test.skip=true 
+
+RUN mvn clean install -Dmaven.test.skip=true 
 
 WORKDIR target
 
