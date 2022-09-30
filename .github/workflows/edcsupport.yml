@@ -42,10 +42,6 @@ jobs:
         with:
           java-version: '18'
           distribution: 'temurin'
-        
-      - name: Build
-        run: |
-            cd product-dft-backend && mvn -B package
       
       - name: Extract Metadata (tags, labels) for Docker
         id: meta
