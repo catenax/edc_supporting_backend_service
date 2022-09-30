@@ -1,4 +1,4 @@
-FROM maven:3.8.5-openjdk-18-slim as build
+FROM maven:latest
 
 WORKDIR /customservice
 
@@ -9,7 +9,7 @@ COPY ./pom.xml /pom.xml
 COPY ./src ./src
 
 # build for release
-RUN mvn clean install 
+RUN mvn clean install -Dmaven.test.skip=true 
 
 WORKDIR target
 
